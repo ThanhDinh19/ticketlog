@@ -1,0 +1,222 @@
+.home-panel {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  border: 1px solid rgba(227, 216, 216, 0.65);
+  border-radius: 22px;
+  background: rgba(155, 155, 155, 0.48);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.22);
+  box-sizing: border-box;
+}
+
+.home-login-panel {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.home-panel-body {
+  padding: 28px;
+}
+
+.home-panel-title {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.home-menu-actions {
+  display: grid;
+  gap: 14px;
+}
+
+.home-menu-btn {
+  width: 100%;
+  min-height: 58px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.home-menu-btn i {
+  font-size: 20px;
+}
+
+.home-menu-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.18);
+  text-decoration: none;
+}
+
+.home-menu-btn-primary {
+  background: #1677ff;
+  color: #ffffff;
+}
+
+.home-menu-btn-primary:hover {
+  background: #0b68ea;
+  color: #ffffff;
+}
+
+.home-menu-btn-success {
+  background: #198754;
+  color: #ffffff;
+}
+
+.home-menu-btn-success:hover {
+  background: #147347;
+  color: #ffffff;
+}
+
+.home-menu-btn-warning {
+  background: #ffc107;
+  color: #111827;
+}
+
+.home-menu-btn-warning:hover {
+  background: #f5b800;
+  color: #111827;
+}
+
+.home-menu-btn-danger-outline {
+  background: rgba(255, 255, 255, 0.12);
+  color: #dc3545;
+  border: 1.5px solid #dc3545;
+}
+
+.home-menu-btn-danger-outline:hover {
+  background: #dc3545;
+  color: #ffffff;
+}
+
+.home-login-alert {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #f5c2c7;
+  background: #f8d7da;
+  color: #842029;
+  font-size: 15px;
+}
+
+.home-login-form {
+  display: grid;
+  gap: 18px;
+}
+
+.home-form-group {
+  display: grid;
+  gap: 8px;
+}
+
+.home-form-label {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.home-form-control {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 0 16px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 18px;
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.home-form-control:focus {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 4px rgba(22, 119, 255, 0.18);
+}
+
+.home-login-btn {
+  width: 100%;
+  min-height: 56px;
+  border: none;
+  border-radius: 10px;
+  background: #1677ff;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.home-login-btn:hover {
+  background: #0b68ea;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(22, 119, 255, 0.25);
+}
+
+.home-support-link-wrap {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.home-support-link {
+  color: #06439f;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-support-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .home-panel {
+    border-radius: 18px;
+  }
+
+  .home-panel-body {
+    padding: 22px;
+  }
+
+  .home-panel-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .home-menu-btn {
+    min-height: 52px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .home-form-control {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .home-login-btn {
+    min-height: 52px;
+    font-size: 18px;
+  }
+}
