@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 
 const supportRoutes = require("./src/routes/support.routes");
 const reportRoutes = require("./src/routes/report.routes");
@@ -30,6 +31,13 @@ app.use("/api/workday-configs", workdayConfigRoutes);
 app.use("/api/support-reasons", supportReasonRoutes);
 app.use("/api/qr", qrRoutes);
 
+
+// Serve frontend static files and handle client-side routing
+const frontendDistPath = path.join(__dirname, "../frontend/dist");
+app.use(express.static(frontendDistPath));
+app.get(/^\/(?!api).*/, (req, res) => {
+  res.sendFile(path.join(frontendDistPath, "index.html"));
+});
 
 const port = process.env.PORT || 8001;
 
